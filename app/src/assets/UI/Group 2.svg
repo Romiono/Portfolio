@@ -1,0 +1,7 @@
+<svg width="11" height="212" viewBox="0 0 11 212" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line x1="5.5" y1="11" x2="5.5" y2="101" stroke="#8B8D94" style="stroke:#8B8D94;stroke:color(display-p3 0.5451 0.5529 0.5804);stroke-opacity:1;"/>
+<line x1="5.5" y1="111" x2="5.5" y2="201" stroke="#8B8D94" style="stroke:#8B8D94;stroke:color(display-p3 0.5451 0.5529 0.5804);stroke-opacity:1;"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.5 11C8.53757 11 11 8.53757 11 5.5C11 2.46243 8.53757 0 5.5 0C2.46243 0 0 2.46243 0 5.5C0 8.53757 2.46243 11 5.5 11ZM5.5 10C7.98528 10 10 7.98528 10 5.5C10 3.01472 7.98528 1 5.5 1C3.01472 1 1 3.01472 1 5.5C1 7.98528 3.01472 10 5.5 10Z" fill="#FF4A57" style="fill:#FF4A57;fill:color(display-p3 1.0000 0.2902 0.3412);fill-opacity:1;"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.5 212C8.53757 212 11 209.538 11 206.5C11 203.462 8.53757 201 5.5 201C2.46243 201 0 203.462 0 206.5C0 209.538 2.46243 212 5.5 212ZM5.5 211C7.98528 211 10 208.985 10 206.5C10 204.015 7.98528 202 5.5 202C3.01472 202 1 204.015 1 206.5C1 208.985 3.01472 211 5.5 211Z" fill="#FF4A57" style="fill:#FF4A57;fill:color(display-p3 1.0000 0.2902 0.3412);fill-opacity:1;"/>
+<circle cx="5.5" cy="105.5" r="5.5" fill="#FF4A57" style="fill:#FF4A57;fill:color(display-p3 1.0000 0.2902 0.3412);fill-opacity:1;"/>
+</svg>
