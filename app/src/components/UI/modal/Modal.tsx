@@ -31,7 +31,6 @@ const Modal = ({isOpen, setIsOpen}: IModel) => {
     const handleFormSubmit = async (e: FormDataEvent) => {
         e.preventDefault();
 
-        // Проверка наличия значений во всех полях
         if (!formData.phoneNumber || !formData.email || !formData.fullName) {
             setFormError({
                 phoneNumber: !formData.phoneNumber ? 'Заполните поле' : '',
@@ -41,7 +40,6 @@ const Modal = ({isOpen, setIsOpen}: IModel) => {
             return;
         }
 
-        // Ваш запрос через Axios
         try {
             const response = await axios.post('ваш URL', formData);
             console.log('Ответ сервера:', response.data);
