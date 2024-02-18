@@ -11,7 +11,7 @@ const Greetings = () => {
             <div data-aos={'fade-right'} data-aos-easing="ease-out-cubic"
                  data-aos-duration="500" data-aos-delay={'300'} className={'basis-full text-center md:basis-3/4 md:text-left'}>
                 <h1 className={'font-bold text-5xl mb-7'}>Hello, I'am<br/> a Frontend Developer</h1>
-                <p className={'text-gray-600'}>Я Frontend разработчик, занимаюсь<br/> написанием сайтов любой сложерсти на <br/>React + ts</p>
+                <p className={'text-gray-600'}>Я Frontend разработчик, занимаюсь<br/> написанием сайтов любой сложности на <br/>React + ts</p>
                 <button onClick={() => setIsOpen(!isOpen)} className={'bg-accent w-1/2 xl:w-1/4 h-11 my-7 rounded'}>Создать сайт!</button>
                 <Modal isOpen={isOpen} setIsOpen={setIsOpen}/>
             </div>
