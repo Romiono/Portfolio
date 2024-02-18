@@ -18,9 +18,15 @@ const products = [
     { name: 'Фронтенд', description: 'Граматная реализация frontend прилажений', href: '#', icon: CodeBracketIcon },
 ]
 
-export default function Header() {
+interface IRef {
+    func1: () => void;
+    func2: () => void;
+}
+
+export default function Header({func1, func2}:IRef) {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
     const [open, setOpen] = useState(false);
+
     return (
         <header className="bg-header lg: mb-32">
             <nav className="mx-auto flex container items-center justify-between p-6 lg:px-8" aria-label="Global">
@@ -79,12 +85,12 @@ export default function Header() {
                         </Transition>
                     </Popover>
 
-                    <a href="#" className="text-sm font-semibold leading-6 text-gray-200">
+                    <p onClick={func1} className="text-sm font-semibold leading-6 text-gray-200 cursor-pointer">
                         Skill-Set
-                    </a>
-                    <a href="#" className="text-sm font-semibold leading-6 text-gray-200">
+                    </p>
+                    <p onClick={func2}  className="text-sm font-semibold leading-6 text-gray-200 cursor-pointer">
                         Connection
-                    </a>
+                    </p>
                 </Popover.Group>
             </nav>
             <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
@@ -133,18 +139,18 @@ export default function Header() {
                                             </Disclosure.Panel>
                                         </>
                                 </Disclosure>
-                                <a
-                                    href="#"
+                                <p
+                                    onClick={func1}
                                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-200 hover:bg-main"
                                 >
                                     Skill-Set
-                                </a>
-                                <a
-                                    href="#"
+                                </p>
+                                <p
+                                    onClick={func2}
                                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-200 hover:bg-main"
                                 >
-                                    Connection
-                                </a>
+                                    Portfolio
+                                </p>
                             </div>
                         </div>
                     </div>
