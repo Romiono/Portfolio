@@ -7,6 +7,7 @@ import 'swiper/css/effect-coverflow';
 import 'swiper/css/navigation';
 import druplicon from '../../assets/portflio /img.png'
 import portfolio from '../../assets/portflio /img_1.png'
+import capa from '../../assets/portflio /img_2.png'
 import progress from "../../assets/UI/Group 3.svg";
 
 
@@ -58,10 +59,10 @@ const Partfolio = () => {
     const slides = [
         { id: 1, imageUrl: druplicon, caption: 'drupale-coder' },
         { id: 1, imageUrl: portfolio, caption: 'portfolio' },
-        { id: 1, imageUrl: druplicon, caption: 'drupale-coder' },
-        { id: 1, imageUrl: portfolio, caption: 'portfolio' },
-        { id: 1, imageUrl: druplicon, caption: 'drupale-coder' },
-        { id: 1, imageUrl: portfolio, caption: 'portfolio' },
+        { id: 1, imageUrl: capa, caption: 'capa' },
+        { id: 1, imageUrl: druplicon, caption: 'portfolio' },
+        { id: 1, imageUrl: portfolio, caption: 'drupale-coder' },
+        { id: 1, imageUrl: capa, caption: 'portfolio' },
     ];
 
     return (
@@ -93,7 +94,7 @@ const Partfolio = () => {
                     >
                         {slides.map((slide) => (
                             <SwiperSlide key={slide.id}>
-                                <div className={'p-3 bg-header w-full h-full rounded-3xl'}>
+                                <div className={'p-3 bg-header w-full h-100 rounded-3xl'}>
                                     <img className={'rounded-t-3xl mb-2'} src={slide.imageUrl} alt={slide.caption}/>
                                     <h6 className={'font-bold text-xl text-center'}>{slide.caption}</h6>
                                     {/*<p className={'text-xs text-gray-600'}>{description}</p>*/}
